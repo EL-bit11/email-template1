@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <title></title>
+    <!--[if mso]>
+    <noscript>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
+
+    <style>
+        table,
+        td,
+        div,
+        h1,
+        p {
+            font-family: "Lucida Sans", sans-serif;
+        }
+        table,
+        td {
+            border: 2px solid #000000 !important;
+        }
+
+        .dress-container,
+        .swimwear-container,
+        .top-container,
+        .shoes-container {
+            width: 300px;
+            height: 400px;
+            background-size: cover;
+            transition: background-image 0.5s ease;
+            position: relative;
+        }
+
+        .dress-container {
+            background: url(dress.webp) no-repeat center center;
+        }
+        .dress-container:hover {
+            background: url(dress-hover.jpeg) no-repeat center center;
+        }
+
+        .swimwear-container {
+            background: url(swimwear.webp) no-repeat center center;
+        }
+        .swimwear-container:hover {
+            background: url(swimwear-hover.jpeg) no-repeat center center;
+        }
+
+        .top-container {
+            background: url(top.webp) no-repeat center center;
+        }
+        .top-container:hover {
+            background: url(top-hover.jpeg) no-repeat center center;
+        }
+
+        .shoes-container {
+            background: url(shoes.webp) no-repeat center center;
+        }
+        .shoes-container:hover {
+            background: url(shoes-hover.webp) no-repeat center center;
+        }
+
+        .item-title {
+            position: absolute;
+            /*bottom: 10px;*/
+            left: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 40px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0">
+<!--create overall table-->
+<table role="presentation" style="width: 100%; border-collapse: collapse; border: 0; border-spacing: 0; background: #ffffff;">
+    <tr>
+        <td align="center" style="padding: 0">
+            <table role="presentation" style="width: 602px; border-collapse: collapse; border: 5px solid #cccccc; border-spacing: 0; text-align: center;">
+                <tr>
+                    <td style="padding: 0; font-size: xx-large; font-weight: 600; letter-spacing: 200;">asos</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; padding: 0">
+                        <ul style="list-style-type: none; display: flex; gap: 30px; justify-content: center; align-items: center; margin-left: -20px;">
+                            <li><a href="#" class="">New In</a></li>
+                            <li>Dresses</li>
+                            <li>Shoes</li>
+                            <li style="color: #ff0000cc">Sale</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 20px 20px">
+                        <img src="banner.jpg" alt="" class="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="font-size: 13px">You know you've made it when you're browsing ASOS without the low-high filter on. Until then, here are some <br />great finds in final clearance.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0">
+                        <div class="grid">
+                            
+                            <div class="dress-container">
+                                <div class="item-title">DRESSES UNDER £30</div>
+                            </div>
+                            <div class="swimwear-container">
+                                <div class="item-title">SWIMWEAR UNDER £30</div>
+                            </div>
+                            <div class="top-container">
+                                <div class="item-title">TOPS UNDER £30</div>
+                            </div>
+                            <div class="shoes-container">
+                                <div class="item-title">SHOES UNDER £30</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
